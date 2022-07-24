@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Download App</title>
+
+	<style type="text/css">
+		*{
+	box-sizing: border-box;
+	margin: 0 0 0 0 ;
+	padding: 0 0 0 0;
+}
+		.animeline{
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to left,#cb2424,#cb2424, #c49c2c,#c49c2c, #cb2424, #c49c2c,#c49c2c,#cb2424,#cb2424);
+	animation-name: FKNprod;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	position: relative;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;}
+img.logo{
+	padding: 8px;
+	background-color: white;
+	box-shadow: 5px 5px 5px red;}
+@keyframes FKNprod{
+	0%{ background:#cb2424 ; }
+	25%{ background:#c49c2c; }
+	50%{ background:#cb2424; }
+	100%{ background:#cb242c; }} 
+
+
+	/*text animation*/
+	body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:#c49c2c;
+}
+
+@keyframes cursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+  90%, to {
+    width: 0;
+  }
+}
+@keyframes slide {
+  33.3333333333% {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+  to {
+    font-size: 0;
+    letter-spacing: 0;
+  }
+}
+.typing-slider {
+  font-family: Consolas, monospace;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.typing-slider p {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: auto;
+  animation: slide 15s step-start infinite;
+  margin-top: 15%;
+}
+
+.typing-slider p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 3px solid white;
+  background-color: #c49c2c;
+  animation: typing 5s infinite, cursor 1s infinite;
+}
+
+.typing-slider p:nth-child(1) {
+  animation-delay: 0s;
+}
+.typing-slider p:nth-child(1)::after {
+  animation-delay: 0s;
+  animation-timing-function: steps(16), step-end;
+}
+
+.typing-slider p:nth-child(2) {
+  animation-delay: 5s;
+}
+.typing-slider p:nth-child(2)::after {
+  animation-delay: 5s;
+  animation-timing-function: steps(23), step-end;
+}
+
+.typing-slider p:nth-child(3) {
+  animation-delay: 10s;
+}
+.typing-slider p:nth-child(3)::after {
+  animation-delay: 10s;
+  animation-timing-function: steps(12), step-end;
+}
+
+	input{
+	padding: 20px;
+	display: block;
+	border-radius: 25px;
+	text-transform: uppercase;
+	border: 2px solid white;
+	font-weight: bold;
+	color: red;
+	background-color:transparent;
+	font-size: 20px;
+	margin: auto;
+	line-height: 30%;
+	margin-top: 5%;
+	cursor: pointer;
+}
+}
+	
+	
+	
+
+.footer{
+	height: 100vh;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	line-height: 80px;
+	align:bottom;
+	justify-content: center;
+	background-color: gray;
+	color: white;
+	margin-bottom: 0%;
+}
+
+
+
+
+@media (max-width: 900px){
+	.typing-slider p {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: auto;
+  animation: slide 15s step-start infinite;
+  margin-top: 25%;}
+	
+	input{
+	padding: 20px;
+	display: block;
+	border-radius: 25px;
+	text-transform: uppercase;
+	border: 2px solid white;
+	font-weight: bold;
+	color: red;
+	background-color:transparent;
+	font-size: 20px;
+	margin: auto;
+	line-height: 30%;
+	margin-top: 5%;
+
+}
+}
+	
+	input:hover{
+		background-color: #cb2424;
+		color: #c49c2c;
+	}
+.yowa{
+	text-decoration: none;
+}
+
+.footer{
+	height: 100vh;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	line-height: 80px;
+	justify-content: center;
+	background-color: gray;
+	color: white;
+	margin-top: 40%;
+	margin-bottom: 0%;
+}
+	</style>
+</head>
+<body>
+	<div class="animeline" >
+
+
+	<div align="center" class="logo">
+		<img src="../images/logo.png" height="100px"  class="logo">
+		</div>
+		</div>
+
+		<div class="typing-slider">
+  <p>WE ARE SORRY!!!</p>
+  <p>APP UNAVAILABLE</p>
+  <p>CLICK ON HOME</p>
+</div>
+<a href="../index.html" class="yowa" id="yowa">
+<input type="button" value="HOME">
+</a>
+	
+
+<footer >
+	<div class="footer">&copy; coprwright 2022 FKN</div>
+</footer>
+</body>
+</html>
